@@ -1,3 +1,12 @@
 haar cascades practica
 
+env:
+FACE_CASCADE_PATH=docs/haarcascade_frontalface_alt.xml
+EYES_CASCADE_PATH=docs/haarcascade_eye_tree_eyeglasses.xml
+CAMERA_INDEX=0
+
+start command: task run or python3 src/main.py
+
 link for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
+lint for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_eye_tree_eyeglasses.xml
+linl for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml
