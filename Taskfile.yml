@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  run:
+    dir: '{{.USER_WORKING_DIR}}'
+    cmds:
+      # - echo "run project..."
+      - python3 src/main.py
