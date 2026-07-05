@@ -21,7 +21,7 @@ export const createDetectionSocket = (
     try {
       handlers.onMessage(JSON.parse(event.data) as DetectionResponse);
     } catch {
-      // Ignore malformed payloads to keep detection loop alive.
+      console.error("Error occurred while sending message", event);
     }
   };
 

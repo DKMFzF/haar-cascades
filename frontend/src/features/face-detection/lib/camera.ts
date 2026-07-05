@@ -6,9 +6,7 @@ export const startCamera = async (): Promise<MediaStream> => {
 };
 
 export const stopStream = (stream: MediaStream | null): void => {
-  if (!stream) {
-    return;
-  }
+  if (!stream) return;
 
   stream.getTracks().forEach((track) => track.stop());
 };

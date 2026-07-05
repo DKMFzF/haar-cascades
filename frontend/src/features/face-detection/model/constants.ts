@@ -1,12 +1,12 @@
-export const PROCESS_INTERVAL_MS = 150;
-export const IMAGE_QUALITY = 0.8;
+export const PROCESS_INTERVAL_MS = 80;
+export const IMAGE_QUALITY = .5;
 
 export const DETECTION_STATUS = {
-  initializing: "Инициализация камеры...",
-  connected: "WebSocket подключен, обнаружение лиц запущено",
+  initializing: "Включаем камеру...",
+  connected: "Обнаружение лиц запущено",
   active: "Камера активна",
   sendFrameError: "Не удалось отправить кадр по WebSocket",
-  wsError: "WebSocket ошибка соединения с backend",
-  wsClosed: "WebSocket соединение закрыто",
+  wsError: "Ошибка соединения с backend",
+  wsClosed: "Соединение закрыто",
   cameraError: "Не удалось запустить камеру",
 } as const;
