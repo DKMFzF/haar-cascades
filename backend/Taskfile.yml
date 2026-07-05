@@ -6,6 +6,11 @@ tasks:
     cmds:
       - ./venv/bin/python3 src/main.py
 
+  api:
+    dir: '{{.USER_WORKING_DIR}}'
+    cmds:
+      - ./venv/bin/uvicorn src.api:app --reload --host 0.0.0.0 --port 8000
+
   install:
     dir: '{{.USER_WORKING_DIR}}'
     cmds:
