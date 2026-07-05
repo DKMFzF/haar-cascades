@@ -1,26 +1,22 @@
 haar cascades practica
 
-## Env backend
+env backend
 FACE_CASCADE_PATH=docs/haarcascade_frontalface_alt.xml
 EYES_CASCADE_PATH=docs/haarcascade_eye_tree_eyeglasses.xml
 CAMERA_INDEX=0
 
-## Env frontend
-Copy `frontend/.env.local.example` to `frontend/.env.local`.
+env frontend
+Copy frontend/.env.local.example to frontend/.env.local.
 
-## Run backend API
+run backend API
 cd backend && task install && task api
 
-## Run frontend
+run frontend
 cd frontend && npm install && npm run dev
 
-Open http://localhost:3000 and allow camera access.
-Frontend sends frames via WebSocket endpoint `ws://localhost:8000/ws/detect`.
-
-## Optional desktop mode (legacy)
+optional desktop mode
 cd backend && task run
 
 link for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
-lint for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_eye_tree_eyeglasses.xml
-linl for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml
-
+link for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_eye_tree_eyeglasses.xml
+link for dataset https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml
