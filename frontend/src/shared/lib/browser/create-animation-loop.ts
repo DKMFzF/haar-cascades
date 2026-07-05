@@ -1,3 +1,5 @@
+import type { Nullable } from '@/shared/model/type';
+
 export type AnimationLoop = {
 	start: () => void;
 	stop: () => void;
@@ -6,7 +8,7 @@ export type AnimationLoop = {
 export const createAnimationLoop = (
 	onFrame: (time: number) => void,
 ): AnimationLoop => {
-	let frameId: number | null = null;
+	let frameId: Nullable<number> = null;
 
 	const loop = (time: number) => {
 		onFrame(time);
@@ -15,16 +17,12 @@ export const createAnimationLoop = (
 
 	return {
 		start: () => {
-			if (frameId !== null) {
-				return;
-			}
+			if (frameId !== null) return;
 
 			frameId = requestAnimationFrame(loop);
 		},
 		stop: () => {
-			if (frameId === null) {
-				return;
-			}
+			if (frameId === null) return;
 
 			cancelAnimationFrame(frameId);
 			frameId = null;

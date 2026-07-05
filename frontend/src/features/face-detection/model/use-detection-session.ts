@@ -35,5 +35,8 @@ export const useDetectionSession = (): DetectionSessionRefs => {
 		return controller.stop;
 	}, [reset, setError, setStatus]);
 
-	return { videoRef, canvasRef };
+	return {
+		videoRef,
+		canvasRef,
+	};
 };
