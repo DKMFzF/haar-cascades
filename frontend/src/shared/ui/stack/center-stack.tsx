@@ -1,12 +1,13 @@
 import type { CSSProperties, JSX, PropsWithChildren } from "react";
 
-const centerStackStyle: CSSProperties = {
-  display: "grid",
-  justifyItems: "center",
-  gap: 12,
-  padding: 24,
-};
 
 export function CenterStack({ children }: PropsWithChildren): JSX.Element {
-  return <main style={centerStackStyle}>{children}</main>;
+  return <main style={{
+    display: "flex",
+    flexDirection: "column",
+    width: "100vw",
+    height: "100vh",
+    justifyContent: "center",
+    alignItems: "center",
+  }}>{children}</main>;
 }

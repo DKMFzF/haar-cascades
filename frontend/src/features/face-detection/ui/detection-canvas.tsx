@@ -8,9 +8,7 @@ export const DetectionCanvas = forwardRef<HTMLCanvasElement>(function DetectionC
     <canvas
       ref={ref}
       style={{
-        border: "1px solid #444",
-        borderRadius: 8,
-        maxWidth: "100%",
+        width: "50%",
         height: "auto",
       }}
     />
