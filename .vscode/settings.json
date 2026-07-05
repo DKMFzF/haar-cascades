@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/venv/bin/python3",
+  "python.venvPath": "${workspaceFolder}/backend",
+  "python.venv": "venv",
+  "basedpyright.venvPath": "backend",
+  "basedpyright.venv": "venv"
+}
